@@ -116,8 +116,7 @@
                       '(exit-minibuffer
                         minibuffer-complete-and-exit
                         self-insert-and-exit))
-                (let ((repeat-command (car command-history)))
-                  (eval repeat-command))
+                nil
               (smartrep-do-fun repeat-repeat-char lst))
             (when repeat-repeat-char
               (smartrep-read-event-loop lst)))
